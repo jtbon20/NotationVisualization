@@ -2,7 +2,7 @@
 
 import sys
 from aubio import source, pitch
-import tkinter
+#import py-tkinter
 
 if len(sys.argv) < 2:
     print("Usage: %s <filename> [samplerate]" % sys.argv[0])
@@ -48,6 +48,8 @@ if 0: sys.exit(0)
 #print pitches
 import os.path
 from numpy import array, ma
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from demo_waveform_plot import get_waveform_plot, set_xlabels_sample2time
 
@@ -101,4 +103,4 @@ ax3.axis( xmin = times[0], xmax = times[-1])
 ax3.set_ylabel('condidence')
 set_xlabels_sample2time(ax3, times[-1], samplerate)
 plt.show()
-#plt.savefig(os.path.basename(filename) + '.svg')
+plt.savefig(os.path.basename(filename) + '.svg')
