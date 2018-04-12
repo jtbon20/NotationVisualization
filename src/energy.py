@@ -2,6 +2,7 @@
 
 
 import sys
+import os.path
 from aubio import source, pvoc, filterbank
 from numpy import vstack, zeros
 
@@ -72,3 +73,4 @@ if 1:
     #plt.ylabel('spectral descriptor value')
     ax.xaxis.set_visible(True)
     plt.show()
+    plt.savefig(os.path.basename(filename) + 'energy.svg')
