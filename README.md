@@ -11,8 +11,12 @@ source mp/bin/activate
 #Install required libraries
 pip install git+https://git.aubio.org/aubio/aubio/
 pip install matplotlib
+```
 
+## Running
+
+```
 # Read in a .wav file
-python src/visualize.py ./input/eruption.wav
+python3 src/visualize.py input/eruption.wav
 
 ```
