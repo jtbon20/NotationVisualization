@@ -3,6 +3,7 @@
 import sys
 from aubio import source, pitch
 #import py-tkinter
+from audio_util import get_length_sec
 
 if len(sys.argv) < 2:
     print("Usage: %s <filename> [samplerate]" % sys.argv[0])
@@ -18,7 +19,9 @@ win_s = 4096 // downsample # fft size
 hop_s = 512  // downsample # hop size
 
 s = source(filename, samplerate, hop_s)
-samplerate = s.samplerate
+#samplerate = s.samplerate
+
+print(get_length_sec(filename,samplerate,hop_s))
 
 tolerance = 0.8
 

@@ -2,7 +2,7 @@ import sys
 from aubio import source
 from numpy import zeros, hstack
 
-def get_waveform_plot(filename, samplerate = 0, block_size = 4096, ax = None, downsample = 1):
+def get_waveform_plot(filename, samplerate = 0, block_size = 4096, ax = None, downsample = 2**4):
     import matplotlib.pyplot as plt
     if not ax:
         fig = plt.figure()
@@ -10,7 +10,6 @@ def get_waveform_plot(filename, samplerate = 0, block_size = 4096, ax = None, do
     hop_s = block_size
 
     allsamples_max = zeros(0,)
-    downsample = downsample  # to plot n samples / hop_s
 
     a = source(filename, samplerate, hop_s)            # source file
     if samplerate == 0: samplerate = a.samplerate
@@ -28,7 +27,6 @@ def get_waveform_plot(filename, samplerate = 0, block_size = 4096, ax = None, do
     allsamples_max_times = [ ( float (t) / downsample ) * hop_s for t in range(len(allsamples_max)) ]
 
     ax.plot(allsamples_max_times,  allsamples_max, '-b')
-    ax.plot(allsamples_max_times, -allsamples_max, '-b')
     ax.axis(xmin = allsamples_max_times[0], xmax = allsamples_max_times[-1])
 
     set_xlabels_sample2time(ax, allsamples_max_times[-1], samplerate)
