@@ -1,5 +1,7 @@
 # Sources
 
+This project was made possible by the software and demos from [Aubio](www.aubio.com) and [Matplotlib](https://matplotlib.org/).
+
 ## Demos
 https://github.com/aubio/aubio/tree/master/python/demos
 
