@@ -28,6 +28,9 @@ python3 src/visualize.py input/path/to/file.wav
 
 ```
 
+## Future Work
+In the future, it would be cool to drive the coloring based on another sonic parameter. I [played around](output/spectrograph.png) a bit with [Spectral Analysis](http://clas.mq.edu.au/speech/acoustics/frequency/spectral.html), but ultimately couldn't add it in meaningfully. Potentially figuring out how to determine color based on this or timbre would make the notation even more interesting.
+
 ## Acknowledgment
 This project was made possible by:
 
