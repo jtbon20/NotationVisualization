@@ -21,3 +21,4 @@ https://aubio.org/doc/latest/pitch_8h.html#a03af41e5a873cd04394d639b038271ae
 https://matplotlib.org/api/_as_gen/matplotlib.figure.Figure.html
 https://matplotlib.org/users/tight_layout_guide.html
 https://matplotlib.org/api/_as_gen/matplotlib.pyplot.figure.html#matplotlib.pyplot.figure
+https://stackoverflow.com/questions/7881994/matplotlib-how-to-change-data-points-color-based-on-some-variable

@@ -6,7 +6,7 @@ April 2018
 ```
 # Make & enter a new virtual environment for the music project
 python3 -m virtualenv mp
-source mp/bin/activate
+source notproj/bin/activate
 
 #Install required libraries
 pip install git+https://git.aubio.org/aubio/aubio/
