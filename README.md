@@ -11,6 +11,7 @@ source notproj/bin/activate
 #Install required libraries
 pip install git+https://git.aubio.org/aubio/aubio/
 pip install matplotlib
+pip install scipy
 ```
 
 ## Running

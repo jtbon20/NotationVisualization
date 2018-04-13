@@ -2,4 +2,5 @@ input/*
 notproj/*
 sources.txt
 src/__pycache__/
+src/demos/
 *.pyc

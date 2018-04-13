@@ -5,9 +5,9 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
 def visualize(x, dta, size, filename):
-    fig = plt.figure(figsize=(325, 5), dpi=200)
+    fig = plt.figure(figsize=(325, 10), dpi=200)
     plt.plot(x,dta,c="black", lw=.5)
-    size = (  dta)**2
+    size = ( 30*  size)**2
 
     plt.scatter(x,dta, c = dta , s = size)
     plt.axis('off')
