@@ -13,8 +13,8 @@ The final version morphed out of working to add in various filters and sound ana
 ## Installation
 ```
 # Make & enter a new virtual environment for the music project
-python3 -m virtualenv mp
-source notproj/bin/activate
+python3 -m virtualenv musicproj
+source musicproj/bin/activate
 
 #Install required libraries
 pip install git+https://git.aubio.org/aubio/aubio/
