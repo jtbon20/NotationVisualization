@@ -34,5 +34,5 @@ In the future, it would be cool to drive the coloring based on another sonic par
 ## Acknowledgment
 This project was made possible by:
 
-* [Aubio](https://aubio.com) - Audio processing
+* [Aubio](http://aubio.com) - Audio processing
 * [Matplotlib](https://matplotlib.org/) - Plotting
